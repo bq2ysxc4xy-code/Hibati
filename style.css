@@ -202,3 +202,69 @@ width:100%;
 }
 
 }
+/* POETRY LETTERS */
+
+.poetry-box{
+max-width:900px;
+width:100%;
+text-align:center;
+}
+
+.envelope-big{
+font-size:120px;
+margin-bottom:20px;
+animation:float 3s infinite ease-in-out;
+}
+
+.poem{
+margin-top:25px;
+background:rgba(255,255,255,.75);
+backdrop-filter:blur(20px);
+padding:35px;
+border-radius:30px;
+box-shadow:0 15px 40px rgba(0,0,0,.1);
+animation:paperAppear .8s ease;
+}
+
+.poem p{
+font-size:1.25rem;
+line-height:2.2;
+direction:rtl;
+text-align:center;
+color:#444;
+}
+
+.hidden{
+display:none;
+}
+
+@keyframes paperAppear{
+
+from{
+opacity:0;
+transform:translateY(60px) scale(.95);
+}
+
+to{
+opacity:1;
+transform:translateY(0) scale(1);
+}
+
+}
+
+@media(max-width:768px){
+
+.poem{
+padding:25px;
+}
+
+.poem p{
+font-size:1rem;
+line-height:2;
+}
+
+.envelope-big{
+font-size:90px;
+}
+
+}
