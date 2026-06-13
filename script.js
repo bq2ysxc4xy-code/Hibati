@@ -263,3 +263,46 @@ box.value
 );
 
 });
+/* COMPATIBILITY WHEEL */
+
+const wheelResults = [
+
+"❤️ Soulmate Energy",
+
+"👑 Golden Pair",
+
+"✨ Main Characters",
+
+"😂 Chaos Duo",
+
+"🌸 Best Duo"
+
+];
+
+function spinWheel(){
+
+const wheel =
+document.getElementById("wheel");
+
+const rotation =
+3600 + Math.random()*2000;
+
+wheel.style.transform =
+`rotate(${rotation}deg)`;
+
+setTimeout(()=>{
+
+const result =
+wheelResults[
+Math.floor(
+Math.random()*wheelResults.length
+)
+];
+
+document.getElementById(
+"wheelResult"
+).innerHTML = result;
+
+},4000);
+
+}
