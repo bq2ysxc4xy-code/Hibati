@@ -232,3 +232,34 @@ scratch
 );
 
 });
+/* SAVE ANSWERS */
+
+const answerBoxes =
+document.querySelectorAll(".answerBox");
+
+answerBoxes.forEach((box,index)=>{
+
+const saved =
+localStorage.getItem(
+"answer"+index
+);
+
+if(saved){
+
+box.value = saved;
+
+}
+
+box.addEventListener(
+"input",
+()=>{
+
+localStorage.setItem(
+"answer"+index,
+box.value
+);
+
+}
+);
+
+});
