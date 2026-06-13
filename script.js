@@ -126,3 +126,109 @@ document.getElementById(
 poem.classList.remove("hidden");
 
 }
+/* SCRATCH MEMORIES */
+
+const scratchCanvases =
+document.querySelectorAll(".scratchCanvas");
+
+scratchCanvases.forEach(canvas=>{
+
+const ctx =
+canvas.getContext("2d");
+
+canvas.width =
+canvas.offsetWidth;
+
+canvas.height =
+canvas.offsetHeight;
+
+ctx.fillStyle="#c77dff";
+
+ctx.fillRect(
+0,
+0,
+canvas.width,
+canvas.height
+);
+
+ctx.fillStyle="white";
+
+ctx.font="24px Poppins";
+
+ctx.textAlign="center";
+
+ctx.fillText(
+"Scratch Me ✨",
+canvas.width/2,
+canvas.height/2
+);
+
+let scratching=false;
+
+function scratch(e){
+
+if(!scratching) return;
+
+const rect =
+canvas.getBoundingClientRect();
+
+const x =
+(e.touches ?
+e.touches[0].clientX :
+e.clientX)
+- rect.left;
+
+const y =
+(e.touches ?
+e.touches[0].clientY :
+e.clientY)
+- rect.top;
+
+ctx.globalCompositeOperation =
+"destination-out";
+
+ctx.beginPath();
+
+ctx.arc(
+x,
+y,
+25,
+0,
+Math.PI*2
+);
+
+ctx.fill();
+
+}
+
+canvas.addEventListener(
+"mousedown",
+()=> scratching=true
+);
+
+canvas.addEventListener(
+"mouseup",
+()=> scratching=false
+);
+
+canvas.addEventListener(
+"mousemove",
+scratch
+);
+
+canvas.addEventListener(
+"touchstart",
+()=> scratching=true
+);
+
+canvas.addEventListener(
+"touchend",
+()=> scratching=false
+);
+
+canvas.addEventListener(
+"touchmove",
+scratch
+);
+
+});
