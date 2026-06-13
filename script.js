@@ -114,3 +114,15 @@ e.target.style.transform="";
 
 }
 );
+/* OPEN POEMS */
+
+function openPoem(number){
+
+const poem =
+document.getElementById(
+"poem"+number
+);
+
+poem.classList.remove("hidden");
+
+}
