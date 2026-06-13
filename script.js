@@ -347,3 +347,106 @@ document.getElementById(
 ).innerHTML = randomReason;
 
 }
+/* CAPSULES */
+
+const capsules = {
+
+1:`I know you're already smiling while opening this.
+
+But honestly, seeing you happy is one of my favorite things.
+
+Keep smiling.
+
+The world already has enough serious people.
+
+And by the way...
+
+your smile is still undefeated.`,
+
+2:`If you're opening this because you miss me...
+
+Good.
+
+Because that means I'm living rent free in your head.
+
+Just remember one thing:
+
+No matter how far we are,
+you're still one of the first people I think about every day.
+
+So until we talk again...
+
+consider this a virtual hug.`,
+
+3:`Hey.
+
+I know not every day is easy.
+
+And I know sometimes things feel heavier than they should.
+
+But you've already survived every bad day you've had.
+
+You'll survive this one too.
+
+Drink water.
+
+Rest.
+
+And don't be too hard on yourself.
+
+You deserve kindness too (ziad loves u btw).`,
+
+4:`I don't know what the future looks like.
+
+But I know one thing.
+
+Out of all the people I could've met...
+
+I'm happy I met you.
+
+And sometimes the simplest truths
+are the most important ones.`,
+
+5:`Just in case your brain is overthinking again...
+
+No.
+
+I didn't forget you.
+
+No.
+
+I don't find you annoying.
+
+No.
+
+You're not bothering me.
+
+And yes.
+
+I still care about you more than you think.`,
+
+6:`Congratulations.
+
+You unlocked a secret message.
+
+Reward:
+
+1 hug
+
+3 forehead kisses
+
+17 hours of talking.
+
+No refunds.
+
+Official rules.`
+
+};
+
+function openCapsule(id){
+
+document.getElementById(
+"capsuleContent"
+).innerText = capsules[id];
+
+}
