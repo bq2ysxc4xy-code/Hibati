@@ -306,3 +306,44 @@ document.getElementById(
 },4000);
 
 }
+/* WHY HIBA */
+
+const reasons = [
+
+"Because your smile feels genuine.",
+
+"Because you make conversations easy.",
+
+"Because I like talking to you.",
+
+"Because you're always yourself.",
+
+"Because your voice is comforting.",
+
+"Because you make ordinary moments better.",
+
+"Because I enjoy hearing about your day.",
+
+"Because your energy is different.",
+
+"Because you make me smile.",
+
+"Because you're you."
+
+];
+
+function showReason(){
+
+const randomReason =
+
+reasons[
+Math.floor(
+Math.random()*reasons.length
+)
+];
+
+document.getElementById(
+"reasonBox"
+).innerHTML = randomReason;
+
+}
