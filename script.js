@@ -450,3 +450,14 @@ document.getElementById(
 ).innerText = capsules[id];
 
 }
+/* VOICE MESSAGE */
+
+function playVoice(){
+
+document
+.getElementById(
+"hiddenVideo"
+)
+.play();
+
+}
