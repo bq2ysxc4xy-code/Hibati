@@ -552,3 +552,75 @@ document.getElementById(
 emergencyMessages[random];
 
 }
+let secretCount = 0;
+
+function secretClick(){
+
+secretCount++;
+
+if(secretCount >= 5){
+
+nextPage(26);
+
+}
+
+}
+function openGift(){
+
+document.getElementById(
+"giftResult"
+).innerHTML=
+
+`
+<h2>
+🏆 Best Hiba Award
+</h2>
+
+<p>
+Officially certified
+as one of ziad's favorite people.
+❤️
+</p>
+`;
+
+}
+function launchConfetti(){
+
+confetti({
+
+particleCount:200,
+
+spread:180,
+
+origin:{
+y:0.6
+}
+
+});
+
+}
+setInterval(()=>{
+
+const heart =
+document.createElement("div");
+
+heart.className =
+"heart";
+
+heart.innerHTML =
+"💖";
+
+heart.style.left =
+Math.random()*100+"vw";
+
+document.body.appendChild(
+heart
+);
+
+setTimeout(()=>{
+
+heart.remove();
+
+},6000);
+
+},1500);
