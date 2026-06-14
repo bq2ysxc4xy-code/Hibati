@@ -682,3 +682,16 @@ margin-top:25px;
 min-height:140px;
 box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
+/* COMPLIMENTS */
+
+.compliment-btn{
+margin:20px 0;
+}
+
+#complimentBox{
+background:white;
+padding:30px;
+border-radius:25px;
+min-height:150px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
