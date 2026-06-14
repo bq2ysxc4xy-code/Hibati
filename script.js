@@ -488,3 +488,36 @@ document.getElementById(
 memories[random];
 
 }
+const compliments = [
+
+"Your smile could win arguments ",
+
+"You make conversations feel effortless.",
+
+"You have a comforting energy.",
+
+"You're prettier than you realize.",
+
+"You make ordinary moments feel special.",
+
+"Your personality is genuinely attractive.",
+
+"You have main character energy",
+
+"You're one of those people others remember."
+
+];
+
+function generateCompliment(){
+
+const random =
+Math.floor(
+Math.random()*compliments.length
+);
+
+document.getElementById(
+"complimentBox"
+).innerText =
+compliments[random];
+
+}
