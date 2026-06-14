@@ -461,3 +461,30 @@ document
 .play();
 
 }
+const memories = [
+
+"Remember when we talked for hours and didn't notice the time? 😭",
+
+"One random message from you can change my whole mood.",
+
+"The first time we started talking felt unexpectedly easy.",
+
+"I still remember random details you probably forgot telling me.",
+
+"Some conversations with you live rent free in my head."
+
+];
+
+function randomMemory(){
+
+const random =
+Math.floor(
+Math.random()*memories.length
+);
+
+document.getElementById(
+"memoryText"
+).innerText =
+memories[random];
+
+}
