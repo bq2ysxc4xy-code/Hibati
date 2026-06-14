@@ -662,3 +662,23 @@ box-shadow:0 10px 25px rgba(0,0,0,.08);
 margin-right:12px;
 transform:scale(1.2);
 }
+/* MEMORY JAR */
+
+.memory-jar{
+font-size:120px;
+cursor:pointer;
+transition:.3s;
+}
+
+.memory-jar:hover{
+transform:scale(1.08) rotate(6deg);
+}
+
+#memoryText{
+background:white;
+padding:30px;
+border-radius:25px;
+margin-top:25px;
+min-height:140px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
