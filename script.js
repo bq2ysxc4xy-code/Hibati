@@ -521,3 +521,34 @@ document.getElementById(
 compliments[random];
 
 }
+const emergencyMessages = [
+
+"Reminder: you're cute. This is not a debate.",
+
+"Drink water. You're literally a plant with emotions.",
+
+"Somewhere right now, you're probably overthinking. Stop eafak",
+
+"You're doing better than you think.",
+
+"If nobody told you today: you're appreciated ❤️",
+
+"Official notice: Hiba remains adorable.",
+
+"This button confirms you're amazing. Certified."
+
+];
+
+function emergencySmile(){
+
+const random =
+Math.floor(
+Math.random()*emergencyMessages.length
+);
+
+document.getElementById(
+"emergencyBox"
+).innerText =
+emergencyMessages[random];
+
+}
