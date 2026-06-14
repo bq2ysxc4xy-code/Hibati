@@ -2,6 +2,8 @@ const pages = document.querySelectorAll(".page");
 
 let currentPage = 1;
 
+const totalPages = 28;
+
 document
 .getElementById("page1")
 .classList.add("active");
